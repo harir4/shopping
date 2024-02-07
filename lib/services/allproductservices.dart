@@ -1,8 +1,7 @@
 import 'dart:convert';
 
-import 'package:apitask/modelclass/allproductmodel.dart';
-import 'package:apitask/constants/endpoints.dart' as constant;
-import 'package:flutter/cupertino.dart';
+
+import 'package:shopping/constants/endpoints.dart' as constant;
 import 'package:http/http.dart' as http;
 
 import '../modelclass/allproductmodel.dart';
@@ -64,7 +63,7 @@ class Allproductservices {
   static Future<dynamic> getAllproducts() async {
     try {
       var url = '${constant.domain}${constant.getAll}';
-      print(url);
+      
 
       var uri = Uri.parse(url);
       var response = await http.get(uri);

@@ -5,6 +5,8 @@ import 'package:apitask/constants/endpoints.dart' as constant;
 import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
 
+import '../modelclass/allproductmodel.dart';
+
 class Allproductservices {
   /* static Future<List<Allproductsmodel>> getAllproducts() async {
     try{
